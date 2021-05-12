@@ -1,4 +1,6 @@
 import classes from './AvailableGoods.module.css'
+import Card from '../UI/Card';
+import GoodItem from './GoodItem/GoodItem';
 
 const DUMMY_GOODS = [
   {
@@ -41,13 +43,22 @@ const DUMMY_GOODS = [
 
 
 const AvailableGoods = () => {
-  const goodsList = DUMMY_GOODS.map(good => <li>{good.name}</li>);
+  const goodsList = DUMMY_GOODS.map((good) =>  (
+    <GoodItem 
+      key={good.id} 
+      name={good.name} 
+      description={good.description} 
+      price={good.price}
+      />
+  ));
 
-  return <section className={classes.goods}>
-    <ul>
-      {goodsList}
-    </ul>
-  </section>
+  return (
+    <section className={classes.goods}>
+      <Card>
+        <ul>{goodsList}</ul>
+      </Card>
+    </section>
+  );
 };
 
 export default AvailableGoods;
