@@ -12,7 +12,7 @@ const GoodItem = props => {
         <div className={classes.price}>{price}</div>
       </div>
       <div>
-        <GoodItemForm />
+      <GoodItemForm id={props.id} />
       </div>
     </li>
   )
