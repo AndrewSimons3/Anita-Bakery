@@ -1,5 +1,4 @@
 import { useContext } from 'react';
-
 import classes from './GoodItem.module.css';
 import GoodItemForm from './GoodItemForm';
 import CartContext from '../../../store/cart-context';
@@ -19,14 +18,14 @@ const GoodItem = props => {
   }
 
   return ( 
-    <li>
+    <li className={classes.good}>
       <div>
         <h3>{props.name}</h3>
         <div className={classes.description}>{props.description}</div>
         <div className={classes.price}>{price}</div>
       </div>
       <div>
-      <GoodItemForm onAddToCart={addToCartHandler} />
+      <GoodItemForm id={props.id} onAddToCart={addToCartHandler} />
       </div>
     </li>
   )
