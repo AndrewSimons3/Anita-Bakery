@@ -7,37 +7,37 @@ const DUMMY_GOODS = [
     id: 'm1',
     name: 'Chocolate Chip Cookies',
     description: 'Classic and best seller',
-    price: 22.99,
+    price: 2.00,
   },
   {
     id: 'm2',
     name: 'Lemon Ricotta',
     description: 'made with love',
-    price: 16.5,
+    price: 2.50,
   },
   {
     id: 'm3',
     name: 'Red Velvet Cheesecake Brownies',
     description: 'Will you be mine?',
-    price: 12.99,
+    price: 5,
   },
   {
     id: 'm4',
     name: 'Pumpkin Chocolate Chip Cookies',
     description: 'Spooky good taste!',
-    price: 18.99,
+    price: 2.50,
   },
   {
     id: 'm5',
     name: 'Almond Chocolate Cheesecake',
     description: 'Nuttylicious',
-    price: 18.99,
+    price: 5,
   },
   {
     id: 'm6',
     name: 'Strawberry Ricotta Cake Bars',
     description: 'mmmm...lets get fruity',
-    price: 18.99,
+    price: 4,
   },
 ];
 
