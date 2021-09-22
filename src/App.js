@@ -3,6 +3,7 @@ import Header from './components/Layout/Header';
 import Goods from './components/Goods/Goods';
 import Cart from './components/Cart/Cart';
 import CartProvider from './store/CartProvider';
+import Main from './components/Layout/Main';
 // import { Fragment } from 'react';
 
 
@@ -23,6 +24,7 @@ function App() {
      {cartIsShown && <Cart onClose={hideCartHandler} />}
      <Header onShowCart={showCartHandler} />
      <main>
+     <Main />
       <Goods />
      </main>
    </CartProvider>
